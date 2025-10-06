@@ -33,7 +33,6 @@ public final class GetAverageGradeUseCase {
         for (int i = 0; i < m.length; i++){
             Grade grade = gradeDataBase.getGrade(m[i], course);
             sum += grade.getGrade();
-            count += 1;
         }
 
 
