@@ -364,10 +364,11 @@ public class Application {
                 final String course = courseField.getText();
 
                 try {
-                    final float avg = getTopGradeUseCase.getTopGrade(course);
-                    JOptionPane.showMessageDialog(jFrame, "Top Grade: " + avg);
+                    final float topGrade = getTopGradeUseCase.getTopGrade(course);
+                    JOptionPane.showMessageDialog(jFrame, "Top Grade: " + topGrade);
                     courseField.setText("");
-                } catch (JSONException ex) {
+                }
+                catch (JSONException ex) {
                     JOptionPane.showMessageDialog(jFrame, ex.getMessage());
                 }
             }
