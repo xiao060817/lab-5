@@ -363,10 +363,10 @@ public class Application {
                     final float avg = getTopGradeUseCase.getTopGrade(course);
                     JOptionPane.showMessageDialog(jFrame, "Top Grade: " + avg);
                     courseField.setText("");
-                }
-                catch (JSONException ex) {
+                } catch (JSONException ex) {
                     JOptionPane.showMessageDialog(jFrame, ex.getMessage());
                 }
+            }
         });
 
         leaveTeamButton.addActionListener(new ActionListener() {
