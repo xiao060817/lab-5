@@ -152,7 +152,7 @@ To sign up a username, we are going to make a simple request to the Grade API.
 
 You can do this either through your web browser or using `OkHttp` in the `GetToken` class: 
 
-* If using your web browser, enter `https://grade-apis.panchen.ca/signUp?username=USERNAME`
+* If using your web browser, enter `1`
 with USERNAME replaced with the username you want to use.
 
 * If you want to use OkHttp, complete the TODO in `GetToken.main`.
